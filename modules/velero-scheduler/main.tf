@@ -1,7 +1,7 @@
 resource "kubernetes_manifest" "velero_schedule" {
-  depends_on = [
-    helm_release.velero
-  ]
+  #depends_on = [
+  #  helm_release.velero
+  #]
 
   manifest = {
     apiVersion = "velero.io/v1"
