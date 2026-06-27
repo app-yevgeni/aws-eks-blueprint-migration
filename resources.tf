@@ -12,11 +12,6 @@ module "httpd" {
   service_type = "ClusterIP"
 }
 
-module "local-exec" {
-  source = "./modules/local-exec"
-  depends_on = [module.httpd]
-}
-
 module "kong" {
   source = "./modules/kong"
   depends_on = [module.httpd]
