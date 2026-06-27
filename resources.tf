@@ -24,10 +24,10 @@ module "minio" {
 
 module "velero" {
   source = "./modules/velero"
-  depends_on = [module.kong]
+  depends_on = [module.minio]
 }
 
 module "velero-ui" {
   source = "./modules/velero-ui"
-  depends_on = [module.kong]
+  depends_on = [module.minio]
 }
