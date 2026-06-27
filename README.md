@@ -8,12 +8,12 @@ Provisioning an Amazon Elastic Kubernetes Service (EKS) cluster using Terraform 
 
 🎯 Architecture Overview
 ```
-✅ VPC containing Public and Private Subnets
-✅ Internet Gateway for outbound internet access
-✅ NAT Gateway in the public subnet for private subnet egress
-✅ Elastic Kubernetes Service using a Launch Template
-✅ EC2 instances in the ASG, scaling in/out automatically
-✅ Private resources (like RDS, caches) in the private subnets
+✅ VPC containing , Public+Private Subnets , NAT Gateway
+✅ EKS Cluster Provisioner Workflow 
+✅ Minio S3 Object Storage 
+✅ Velero Disaster Recovery
+✅ Velero UI Interface
+✅ Local Exec ( Logical Workloads )
 ```
 
 
